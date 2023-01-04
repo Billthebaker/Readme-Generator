@@ -15,4 +15,4 @@ to install you just need to open this file up in your code editor, and run "Node
 ![alt text](assets/images/screenshot.png)
 
 
-<iframe src="https://drive.google.com/file/d/1B8EMzjmn7NxkszUFO0Zpkl2txieMICzW/preview" width="640" height="480" allow="autoplay"></iframe>
+https://drive.google.com/file/d/1B8EMzjmn7NxkszUFO0Zpkl2txieMICzW/view -- APPLICATION DEMO VIDEO
