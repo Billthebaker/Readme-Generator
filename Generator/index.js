@@ -2,7 +2,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
 
-// TODO: Create an array of questions for user input
+// array of questions for user input
 const questions = [
   {
     type:'input',
@@ -27,24 +27,46 @@ const questions = [
   {
     type:'input',
     name:'contributing',
-    message:'contributing coders'
+    message:'contributing designers'
   },
   {
     type:'input',
     name:'tests',
     message:'past present future tests'
   },
+  {
+    type: 'list',
+    name: 'license',
+    message: 'What license did you use?',
+    choices: ['MIT', 'Apachi', 'Eclipse', 'ISC', 'Perl', 'Boost'],
+  },
+  {
+    type:'input',
+    name:'qUsername',
+    message:'enter your github username'
+  },
+  {
+    type:'input',
+    name:'qGit',
+    message:'enter URL to your github account'
+  },
+  {
+    type:'input',
+    name:'qEmail',
+    message:'enter your email address'
+  },
+
 
 ]
 
 
-// TODO: Create a function to write README file
+//function to write README file
 function writeToFile(fileName, data) {
   fs.writeFile(fileName, data, (err) => 
   err ? console.error(err) : console.log("Success!"))
 }
 
-// TODO: Create a function to initialize app
+//function to initialize app
 function init() {
   inquirer.prompt(questions)
   .then(function(answers){
